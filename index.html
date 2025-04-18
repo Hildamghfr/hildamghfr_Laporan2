@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>LAPORAN TEORI</title>
+  <link id="bootstrap-style" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <style id="custom-style">
+    body {
+      background-color: #fdf6f0;
+      color: #444;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 30px;
+    }
+    h1, h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #5c5470;
+    }
+    h3 {
+      cursor: pointer;
+      color: #6b4c9a;
+    }
+    .section {
+      background-color: #fff8f0;
+      border: 1px solid #e0d4c0;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(100, 100, 111, 0.1);
+    }
+    button {
+      transition: all 0.3s ease;
+    }
+    .soft-btn {
+      background-color: #a3c4f3;
+      color: #fff;
+      border: none;
+    }
+    .soft-btn:hover {
+      background-color: #88aee0;
+    }
+    .equal-img {
+  width: 400px;
+  height: auto;
+  max-width: 100%;
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>LAPORAN TEORI</h1>
+    <h2>Hilda Maghfira Genansi | 202332092</h2>
+
+    <div class="text-center mb-4">
+      <button class="btn soft-btn" onclick="toggleMode()">Ganti Tampilan</button>
+    </div>
+
+    <div class="alert alert-warning">Klik sub-judul untuk menyembunyikan atau menampilkan isinya.</div>
+
+    <div class="section">
+      <h3 onclick="toggleContent(this)">1. CSS dan JavaScript dalam Pemrograman Web</h3>
+      <p>
+        CSS (Cascading Style Sheets) digunakan untuk mengatur desain dan layout halaman web, memisahkan konten (HTML) dari tampilan (style) agar lebih rapi dan mudah diatur. Fungsinya untuk mengatur warna, ukuran font, jarak antar elemen (margin, padding), posisi elemen (seperti flexbox, grid), dan membuat website terlihat menarik serta responsif di berbagai ukuran layar.
+        <br>
+        JavaScript digunakan untuk menambahkan logika dan interaktivitas ke dalam halaman web, dan membuat halaman web menjadi dinamis (tidak hanya statis seperti HTML + CSS saja). Fungsinya untuk menangani aksi pengguna (klik, scroll, input data), memvalidasi form sebelum dikirim ke server, menampilkan/mengubah konten tanpa reload halaman, dan bisa komunikasi dengan server pakai AJAX (untuk update data tanpa reload).
+      </p>
+    </div>
+
+    <div class="section">
+      <h3 onclick="toggleContent(this)">2. Cara Mengintegrasi CSS dan JavaScript ke dalam Pemrograman Web</h3>
+      <p>
+        CSS bisa dituliskan langsung di dalam tag HTML (inline) atau di bagian atas file HTML dalam tag &lt;style&gt; (internal). Tapi cara yang paling rapi dan sering dipakai adalah dengan membuat file CSS terpisah, lalu dihubungkan ke HTML pakai tag &lt;link&gt;.
+        <br>
+        Sementara JavaScript bisa ditulis langsung di elemen HTML (inline), di dalam tag &lt;script&gt; (internal), atau dalam file terpisah dengan ekstensi .js (eksternal) yang disambungkan ke HTML pakai tag &lt;script src="..."&gt;. Biasanya, cara eksternal lebih sering dipakai karena membuat kode lebih rapi dan mudah diatur.
+      </p>
+    </div>
+
+    <div class="section">
+      <h3 onclick="toggleContent(this)">3. Keuntungan Menggunakan JavaScript dan CSS</h3>
+      <p>
+        CSS membantu mempercantik tampilan halaman web dengan mengatur warna, ukuran huruf, posisi elemen, dan desain keseluruhan agar lebih menarik dan profesional. Selain itu, CSS memisahkan antara tampilan dan konten, sehingga kode HTML menjadi lebih rapi dan mudah dikelola. CSS juga memungkinkan pembuatan desain responsif seperti tablet atau laptop. Keuntungan lainnya juga, satu file CSS dapat digunakan untuk banyak halaman sekaligus, jadi tidak perlu menulis ulang.
+        <br>
+        JavaScript memiliki peran penting dalam menambah interaktivitas pada halaman web. Dengan JavaScript, user bisa berinteraksi dengan elemen web seperti tombol, form, dan menu, tanpa harus me-refresh halaman. JavaScript juga bisa memvalidasi data yang dimasukkan pengguna, mengubah isi halaman secara langsung, menampilkan animasi, efek transisi, popup, atau slideshow gambar. JavaScript juga didukung oleh hampir semua browser modern, jadi pengguna tidak perlu menginstal tambahan apapun.
+      </p>
+    </div>
+
+    <div class="section">
+      <h3 onclick="toggleContent(this)">4. Keuntungan Menggunakan Bootstrap</h3>
+      <p>
+        Bootstrap adalah framework yang memudahkan pembuatan tampilan website. Salah satu keuntungannya adalah mempercepat proses desain web karena Bootstrap sudah menyediakan banyak komponen siap pakai, seperti tombol, form, dan menu navigasi.
+        <br>
+        Bootstrap juga responsif secara otomatis, artinya tampilan web akan menyesuaikan dengan ukuran layar, baik di HP, tablet, maupun laptop tanpa perlu banyak kode tambahan. Ini membuat web terlihat rapi dan konsisten di semua perangkat.
+      </p>
+    </div>
+
+    <div class="section">
+      <h3 onclick="toggleContent(this)">5. Contoh Penggunaan Bootstrap</h3>
+      <p>
+        Tombol "Masuk" pada halaman login Edlink berfungsi untuk memproses data yang sudah diisi oleh pengguna, yaitu alamat email dan kata sandi. Setelah pengguna mengisi data tersebut, tombol ini ditekan untuk mengirim informasi ke sistem Edlink.
+        <br>
+        Sistem akan memeriksa kecocokan data tersebut dengan akun yang sudah terdaftar. Jika cocok, pengguna akan diarahkan ke akun mereka. Jika tidak, akan muncul pesan kesalahan seperti “kata sandi salah” atau “email tidak terdaftar.”
+
+        Tombol ini penting dalam proses login dan didesain agar mudah dilihat dan diklik. Contoh tombol Bootstrap:
+      </p>
+      <button class="btn btn-success">Masuk</button>
+
+      <p class="mt-3">Screenshot hasil running nya:</p>
+
+      <img src="Picture1.png" alt="Screenshot Halaman Login" 
+        class="img-fluid rounded border d-block mx-auto" 
+        style="width: 50%; height: auto;">
+
+      <hr>
+
+      <img src="Picture2.png" alt="Screenshot Halaman Register" 
+        class="img-fluid rounded border d-block mx-auto mt-3" 
+        style="width: 50%; height: auto;">
+
+    </div>
+  </div>
+
+  <script>
+    function toggleContent(header) {
+      const content = header.nextElementSibling;
+      const confirmHide = confirm("Apakah Anda ingin menyembunyikan isi bagian ini?");
+      if (confirmHide) {
+        content.style.display = content.style.display === "none" ? "block" : "none";
+      }
+    }
+
+    let rapi = true;
+    function toggleMode() {
+      const bootstrapStyle = document.getElementById('bootstrap-style');
+      const customStyle = document.getElementById('custom-style');
+
+      if (rapi) {
+        bootstrapStyle.remove();
+        customStyle.innerHTML = `
+          body {
+            background-color: black;
+            color: hotpink;
+            font-family: 'Comic Sans MS', cursive;
+          }
+          h1, h2 {
+            color: lime;
+            text-align: left;
+          }
+          h3 {
+            font-size: 28px;
+            color: orange;
+            background-color: blue;
+          }
+          .section {
+            background-color: yellow;
+            border: 5px dashed red;
+            padding: 10px;
+          }
+          button {
+            background-color: purple;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+          }
+        `;
+      } else {
+        const newLink = document.createElement("link");
+        newLink.id = "bootstrap-style";
+        newLink.rel = "stylesheet";
+        newLink.href = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css";
+        document.head.prepend(newLink);
+
+        customStyle.innerHTML = `
+          body {
+            background-color: #fdf6f0;
+            color: #444;
+            font-family: 'Segoe UI', sans-serif;
+            padding: 30px;
+          }
+          h1, h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #5c5470;
+          }
+          h3 {
+            cursor: pointer;
+            color: #6b4c9a;
+          }
+          .section {
+            background-color: #fff8f0;
+            border: 1px solid #e0d4c0;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(100, 100, 111, 0.1);
+          }
+          .soft-btn {
+            background-color: #a3c4f3;
+            color: #fff;
+            border: none;
+          }
+          .soft-btn:hover {
+            background-color: #88aee0;
+          }
+        `;
+      }
+      rapi = !rapi;
+    }
+  </script>
+</body>
+</html>
